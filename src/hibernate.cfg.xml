@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+
+		<property name="hibernate.connection.url">jdbc:postgresql://explores.amazonaws.com:5432/explorefoodonwheels</property>
+		<property name="hibernate.connection.username"></property>
+		<property name="hibernate.connection.password"></property>
+		<property name="show_sql">false</property>
+
+
+		<mapping class="com.albany.foodOnWheels.model.User" />
+		<mapping class="com.albany.foodOnWheels.model.FoodTruckOwner" />
+		<mapping class="com.albany.foodOnWheels.model.Menu" />
+		<mapping class="com.albany.foodOnWheels.model.Offers" />
+		<mapping class="com.albany.foodOnWheels.model.FoodFestival" />
+		<mapping class="com.albany.foodOnWheels.model.Reviews" />
+
+	</session-factory>
+</hibernate-configuration>
